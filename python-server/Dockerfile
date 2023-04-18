@@ -2,7 +2,7 @@ From python:3.8
 MAINTAINER Songjie Wang "wangso@missouri.edu"
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y update && apt-get -y install net-tools nano wget curl 
+# RUN apt-get -y update && apt-get -y install net-tools nano wget curl 
 WORKDIR /root
 RUN pip3 install pandas flask requests requests py_eureka_client \
     flask_restful flask_cors scipy smart_open cython sklearn 
